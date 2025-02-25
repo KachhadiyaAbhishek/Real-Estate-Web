@@ -1,0 +1,187 @@
+.property{
+  margin-top: 40PX;
+  position: relative;
+}
+
+.property-img img{
+  width: 100%;
+  height: 400px;
+  border-radius: 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Dynamic grid layout */
+  gap: 20px;
+  padding: 20px;
+  position: relative;
+}
+
+.property-header{
+  display: grid;
+  text-align: left;
+  position: absolute;
+  top: 200px;
+  left: 90px;
+}
+
+.highlight1{
+  font-size: 14px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.highlight2 {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #c0392b;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.propert-contect{
+  padding: 120px;
+  width: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.propert-contect p{
+  text-align:center;
+  font-size: 1.5rem;
+  font-weight:100;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #424949;
+}
+
+.filter-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; 
+  margin: 60px 0; 
+  margin-bottom: 80px;
+}
+
+select{
+  padding: 8px;
+  border-radius: 4px;
+  outline: none;
+  color:#7a7575;
+  border: 1px solid #ccc; 
+}
+
+.filter-container input {
+  flex: 1; 
+  min-width: 300px;
+  padding: 10px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  font-size: 14px; 
+  transition: border-color 0.3s; 
+}
+
+.filter-container input:focus {
+  border-color: #007bff; 
+  outline: none;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease-in-out;
+}
+
+.card-image {
+  width: 100%;
+  height: 200px;
+  padding: 10px;
+  border-radius: 20px;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card-image:hover{
+  transform: scale(1.2);
+}
+
+.card-header {
+  display: flex;
+  position: absolute;
+  top: 10px;
+  left: 8px;
+  gap: 10px;
+  margin-bottom: 10px;
+  border: none;
+}
+
+.badge {
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: white;
+}
+
+.rent-badge {
+  background-color: green;
+}
+
+.featured-badge {
+  background-color: orange;
+}
+
+.card-info {
+  padding: 15px;
+  margin-top: -10px;  
+}
+
+.card-title{
+  display:grid;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+  gap: 5px;
+}
+
+.card-title .c-price {
+  color: red;
+  text-decoration: none;
+}
+
+.card-link > a{
+  text-decoration: none;
+  color: black;
+}
+
+p{
+  text-align: left;
+  gap: 10px;
+}
+
+.card-details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.detail-item {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  gap: 10px;
+}
+
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .grid-container {
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+  }
+
+  .highlight2 {
+    font-size: 2rem;
+  }
+}
